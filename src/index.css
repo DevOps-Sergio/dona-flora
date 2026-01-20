@@ -1,0 +1,32 @@
+/* Importamos la fuente 'Playfair Display' (elegante) y 'Inter' (limpia) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reglas globales */
+html {
+  scroll-behavior: smooth; /* Esto hace que al pulsar el menú, baje suavemente */
+}
+
+body {
+  background-color: #F3F0EA;
+  color: #4A4F41;
+  /* Por defecto usamos Inter */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Clase personalizada para títulos elegantes */
+h1, h2, h3, .font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #F3F0EA;
+  color: #4A4F41;
+}
