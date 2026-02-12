@@ -1,31 +1,46 @@
 // src/data.ts
 
+
+
+import VelaDeCafe from './assets/VelaDeCafe.png';
+
 export const workshops = [
   {
     id: 1,
-    title: "Especial San Valentin - Velas & Cartas",
-    date: "14 Febrero",
-    time: "Mañana 10:30h / Tarde 16:00h",
-    duration: "3h",
-    price: "50€",
-    image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&q=80&w=800",
-    description: "Aprende a crear tus propias velas aromáticas con ingredientes 100% naturales.",
-    sessions: [
-      { label: "Turno Mañana (10:30h - 13:30h)", id: "evt-3eklvhvCWwp9yWi" },
-      { label: "Turno Tarde (16:00h - 19:00h)", id: "evt-wPf9aCzp9PSzvYg" }
-    ],
+    title: "Taller de Velas de Café, en Copa de Cristal",
+    date: "7 de marzo",
+    time: "10:00 - 12:00",
+    duration: "2h",
+    price: "45€",
+    priceDuo: "80€", // 40€ por persona
+    locationLabel: "Tenerife",
+    image: VelaDeCafe,
+    //description: "Cata de aromas a ciegas, diseño de aroma y creación de vela de soja en copa de cristal con brunch.",
+    // sessions: [], // Eliminado ya que es fecha única
+    lumaEventId: null, // Pendiente de enlace real
     // --- DATOS NUEVOS ---
     plan: [
-      "Cata de aroma a ciegas",
-      "Mezcla y personalización de tu aroma",
-      "Creación de vela de Soja artesanal",
-      "Escritura de carta con propósito",
-      "Descanso con mesa dulce"
+      "Cata de aromas a ciegas: Despierta tu olfato y descubre las notas más profundas del café.",
+      "Personalización: Diseña tu propio aroma según tu estilo de café favorito (desde un Espresso intenso hasta un dulce Toffee).",
+      "Creación artesanal: Elaborarás tu propia vela de cera de soja en una elegante copa de cristal.",
+      "Decoración: Toppings creativos para darle el toque final a tu 'copa' de café.",
+      "El picoteo: 'Caprichos dulces y salados' (bombones, quesos, mermeladas, panes y mini croissants)."
     ],
-    materials: ["Cera de soja 100% natural", "Recipiente de vidrio", "Mecha ", "Decoración floral", "Sales naturales", "Papelería", "Antifaz", "Selección de aceites esenciales a compartir"],
-    location: "Calle Trasera de la Galera, 1, 35018 Las Palmas de Gran Canaria",
+    materials: [
+      "Cata de aromas a ciegas",
+      "Vela de cera de soja en copa de cristal",
+      "Decoración con toppings creativos",
+      "Aromas: café, chai, pumpkin spice, toffee y vainilla",
+      "Brunch maridaje dulce y salado"
+    ],
+    location: "Espacio Cuarto Veintitrés (C/ Hermanos Puelles, 38250 Bajamar, Tenerife)",
     maxParticipants: 20,
-    lumaEventId: null// El código de tu evento en Luma
+    stripeIds: {
+      individual: "buy_btn_1SyAdQ2Smsh3qzSFHEX1f8EO",
+      duo: "buy_btn_1SyFJB2Smsh3qzSF2pTmJTZK",
+      publishableKey: "pk_test_51SpvEk2Smsh3qzSF6Sb4dTFHCoRDveIZxxN4zFeClUD5E5LjA0SrSKuxTgkjxCItvxgL2Oi4ziTw0cMaE0Gn9Lxi00f9ptkaij"
+    },
+    imagePosition: "object-[50%_60%]"
   },
   {
     id: 2,
@@ -39,20 +54,9 @@ export const workshops = [
     location: "Bodega Urbana, Barrio de las Letras",
     maxParticipants: 12,
     lumaEventId: "evt-3eklvhvCWwp9yWi", // RECUERDA: Aquí tendrías que poner el ID real de ESTE evento en el futuro
-    comingSoon: true
+    comingSoon: true,
+    imagePosition: "object-center"
   },
- 
- /* {
-    id: 3,
-    title: "Cerámica Manual",
-    date: "10 Noviembre",
-    time: "10:00h - 13:00h",
-    price: "60€",
-    image: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&q=80&w=800",
-    description: "Modelado manual de arcilla para crear tu set de desayuno.",
-    materials: ["Arcilla blanca", "Herramientas de modelado", "Cocción y esmaltado", "Envío a domicilio"],
-    location: "Atelier Doña Flora, Madrid Centro",
-    maxParticipants: 8,
-    lumaEventId: "evt-3eklvhvCWwp9yWi"
-  }*/
+
+
 ];
